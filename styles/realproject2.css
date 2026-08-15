@@ -1,0 +1,792 @@
+/* Normalize Css */
+@font-face {
+    font-family: "TTNorms";
+    src: url("../Project2/fonts/TT-Norms-Regular.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../Project2/fonts/TTNorms-Medium.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../Project2/fonts/TT-Norms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../Project2/fonts/Times\ New\ Roman\ Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazirmatn-Medium.ttf) format("truetype");
+}
+
+/* normalise section */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Project start */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Vazir";
+    background-color: #f5f8f4;
+}
+
+.container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* header start */
+
+.wrapper {
+    background-color: #e0e1dd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e0e1dd;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo {
+    margin-right: 5rem;
+}
+
+/* .logo {} */
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* .item-list{
+   display: inline;
+} */
+
+.menu__link {
+    text-decoration: none;
+    color: #134074;
+    padding: 0 22px;
+    margin-right: 1rem;
+    transition: all 250ms ease -50ms;
+}
+
+.menu__link:hover {
+    background: #a9d0f4;
+    border-radius: 1rem;
+}
+
+/* .search {} */
+
+.search_textbox {
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    text-align: center;
+    height: 1.9rem;
+    width: 30rem;
+}
+
+.search_textbox:focus{
+    outline: #0b2545 solid 1px;
+    box-shadow: 0px 0px 3px 0px;
+    color: #134074;
+}
+
+.sign-items {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem
+}
+
+.sign {
+    text-decoration: none;
+    color: #134074;
+    padding: 0.5rem;
+}
+.header__icon{
+    display: none;
+    font-size: 1.8rem;
+}
+/* .sing:hover{
+    background-color: ;
+} */
+
+.Log {
+    text-decoration: none;
+    color: #0b2545;
+    padding: 0.5rem;
+    border-radius: 5px;
+   outline: #0b2545 solid 1px;
+    transition: all 84ms cubic-bezier(0.4, 0, 1, 1) 80ms;
+}
+.Log:hover {
+    background: #0b2545;
+    color: #fff;
+}
+
+/* .header-bottom {} */
+
+.top-singers {
+    margin-top: 5rem;
+    border: rgb(223 224 220 / 80%) solid 2px;
+    box-shadow: 0px 0px 0px 0.2px;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+.top-singers__tittle {
+    display: inline-block;
+    color: #134074;
+    /* border-bottom: #134074 solid 1px; */
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: none;
+    margin-bottom: 5px
+}
+
+.top-singers__tittle:hover{
+    text-decoration: underline;
+}
+
+.top_singers-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.top_singers-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 190ms ease-out 40ms;
+}
+
+.top_singers-box:hover {
+    transform: scale(1.1);
+}
+
+.top-singers__img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+/* در اینجا ما برای همه عکس ها یک سایز یکسان مشخص کردیم*/
+
+.top-singers__name {
+    color: #134074;
+}
+
+/*Body start*/
+
+.body{
+    font-family: inherit;
+    
+}
+
+.body-top_new-song{
+    margin-top: 4rem;
+}
+
+.top-tracks_tittle-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-tracks_tittle{
+    margin-left: 6rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    color: #134074;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.showmore-top{
+    text-decoration: none;
+    color: #134074;
+    font-weight: bold;
+    margin-right: 6rem;
+}
+
+.showmore-top:hover{
+    text-decoration: underline;
+}
+
+.top-tracks_tittle:hover{
+    text-decoration: underline;
+}
+
+.works{
+    background-color: #e0e1dd;
+    /* height: 55rem; */
+    padding: 3rem 0.5rem 8rem .5rem;
+}
+
+.tracks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+/* .box-track{
+
+} */
+
+.track{
+    display: flex;
+    width: 17rem;
+    height: 17rem;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 190ms ease-out 40ms;
+    line-height: 1px;
+}
+
+.track:hover{
+    transform: scale(1.1);
+}
+
+.track:active{
+    transform: scale(0.9);
+}
+
+.img-track{
+    width: inherit;
+    /* height: inherit; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0.5px;
+}
+
+.name-track{
+    font-weight: bold;
+    color: #0b2545;
+}
+
+.name-singer{
+    font-weight: bold;
+    font-size: small;
+    color: #5d5d5d;
+}
+/* end section one */
+
+
+/* start section two */
+
+.body-mid_top-musics{
+    /* max-height: 15rem; */
+    margin-top: 5rem;
+}
+
+.top_music_tittle-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_music_tittle{
+    margin:0;
+    display: inline-block;
+    color: #3e6697;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.showmore{
+    text-decoration: none;
+    color: #3e6697;
+    font-weight: bold;
+}
+
+.showmore:hover{
+    text-decoration: underline;
+}
+
+.top_musics-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2rem .5rem;
+}
+
+.music_box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    line-height: 9px;
+    opacity: 0.8;
+    transition: all 90ms ease-out 40ms;
+    cursor: pointer;
+}
+
+.music_box:hover{
+    opacity: 1;
+}
+
+/* .img_musics{
+    
+} */
+
+.img_music{
+    height: 11rem;
+    border-radius: 4px;
+}
+
+/* .titlle_musics{
+
+} */
+
+.name_music{
+    font-weight: bold;
+    color: #0b2545;
+}
+
+/* end section two */
+
+/* strat footer */
+
+/* .footer{
+
+} */
+
+.footer_box{
+margin-top: 5rem;
+background-color: #0b2545;
+/* height: 20rem; */
+padding: 4rem 0;
+}
+
+.footer_wrapper{
+    display: flex;
+    color: #e0e1dd;
+    gap: 10rem;
+    align-items: flex-start;
+}
+
+.Company{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
+    
+}
+
+h3{
+    margin: 0;
+}
+
+.footer_items{
+    text-decoration: none;
+    color: #e0e1dd9c;
+}
+
+.footer_items:hover{
+    text-decoration: underline;
+}
+
+.Communities{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
+}
+
+.Useful_links{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
+}
+
+.LOmusic_Plans{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.3rem;
+}
+
+.social{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.insta{
+    width: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 100ms ease 50ms;
+}
+
+.telegram{
+    width: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 100ms ease 50ms;
+}
+
+.x{
+    width: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 100ms ease 50ms;
+}
+
+.insta:hover{
+    background-color: #e34e5f;
+    border-radius: 6px;
+}
+
+.telegram:hover{
+    background-color: #29a1d4;
+    border-radius: 6px;
+}
+
+.x:hover{
+    background-color: #0282bd17;
+    border-radius: 6px;
+}
+
+/* project reaspons */
+@media only screen and (max-width: 1670px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .track{
+        width: 12rem;
+        height: 8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1360px) {
+
+    .container {
+        max-width: 1400px;
+    }
+    .menu__link{
+        padding:0px 10px;
+        margin: 0px 0px 0px 10px;
+    }
+    .search_textbox{
+        width: 20rem;
+    }
+    .nav_logo {
+    margin-right: 3rem;
+}
+    
+@media only screen and (max-width: 992px){
+    .container{
+        max-width:1200px ;
+    }
+
+    .search_textbox{
+        width: 12rem;
+        height: 1.5rem
+    }
+    .nav_logo {
+        margin-right: 1rem;
+    }
+    .sign-items{
+        font-size: 12.5px;
+    }
+    .top-tracks_tittle {
+        margin-left: 1rem;
+    }
+    .tracks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8rem;
+        justify-content: center;
+    }
+    .footer_wrapper{
+        gap: 3rem;
+        justify-content: center;
+    }
+    .social{
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width:1000px ;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -256px;
+        bottom: 0;
+        flex-direction: column;
+        width: 16rem;
+        background-color: #2569e0;
+        padding: 2rem 1rem;
+        transition: all 0.3s ease-in;
+    }
+    .footer_wrapper{
+        gap: 1rem;
+    }
+    .menu,.sign-items{
+        display: none;
+    }
+    .header__icon {
+        display: block;
+        cursor: pointer;
+    }
+    .social {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .top-tracks_tittle {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+    }
+    .search_textbox{
+        width: 9rem;
+    }
+    .header-top {
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-singers__img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .footer_wrapper{
+        flex-direction: column;
+    }
+    .tracks{
+        gap: 5rem;
+    }
+    .track {
+        width: 7rem;
+        height: 6rem;
+        display: ;        
+    }
+}
