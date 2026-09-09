@@ -14,8 +14,6 @@
 - Product cards
 - Navigation menu
 - Product categories
-- Shopping cart UI
-- Modern and clean interface
 
 ## Features
 
